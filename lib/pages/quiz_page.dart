@@ -16,6 +16,9 @@ class QuizPage extends StatefulWidget {
 
 class QuizPageState extends State<QuizPage> {
 
+  int question1 = 0;
+  
+
   Question currentQuestion;
   Quiz quiz = new Quiz([
     new Question("2 * 4 - 3 = 5", false),

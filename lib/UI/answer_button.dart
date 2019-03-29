@@ -17,7 +17,7 @@ class AnswerButton extends StatelessWidget {
           child: new Center(
               child: new Container(
                 decoration: new BoxDecoration(
-                    border: new Border.all(color: Colors.white, width: 4.0)
+                    border: new Border.all(color: Colors.white, width: 4.0, style: BorderStyle.solid)
                 ),
                 padding: new EdgeInsets.all(15.0),
                 child: new Text(_answer == true ? "True" : "False",
