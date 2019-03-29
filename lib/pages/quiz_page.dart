@@ -19,7 +19,7 @@ class QuizPage extends StatefulWidget {
 class QuizPageState extends State<QuizPage> {
 
   Question currentQuestion;
-  
+
   static createQuestion(bool ans) {
     int a = new Random().nextInt(10);
     int b = new Random().nextInt(10);
@@ -36,8 +36,8 @@ class QuizPageState extends State<QuizPage> {
   Quiz quiz = new Quiz([
     new Question(createQuestion(false), false),
     new Question(createQuestion(false), false),
-    new Question(createQuestion(true), true),
     new Question(createQuestion(false), false),
+    new Question(createQuestion(true), true),
     new Question(createQuestion(true), true)
   ]);
 

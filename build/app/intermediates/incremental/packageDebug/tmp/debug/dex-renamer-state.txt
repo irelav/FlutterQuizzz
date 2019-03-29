@@ -1,4 +1,4 @@
-#Fri Mar 29 22:00:05 EET 2019
+#Sat Mar 30 00:30:36 EET 2019
 base.0=/Users/Valera/AndroidStudioProjects/quiz_app/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
