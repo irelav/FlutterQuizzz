@@ -9,6 +9,8 @@ import '../UI/correct_wrong_overlay.dart';
 
 import './score_page.dart';
 
+import 'dart:math';
+
 class QuizPage extends StatefulWidget {
   @override
   State createState() => new QuizPageState();
@@ -16,14 +18,27 @@ class QuizPage extends StatefulWidget {
 
 class QuizPageState extends State<QuizPage> {
 
-  int question1 = 0;
-  
-
   Question currentQuestion;
+  
+  static createQuestion(bool ans) {
+    int a = new Random().nextInt(10);
+    int b = new Random().nextInt(10);
+    int sum = 0;
+    if (ans == true) {
+      sum = a * b;
+    } else {
+      sum = a * b + new Random().nextInt(2) + 1;
+    }
+    String question = a.toString() + " * " + b.toString() + " = " + sum.toString();
+    return question;
+  }
+
   Quiz quiz = new Quiz([
-    new Question("2 * 4 - 3 = 5", false),
-    new Question("5 + 30 - 23 + 6 = 17", false),
-    new Question("5 + 4 = 9", true)
+    new Question(createQuestion(false), false),
+    new Question(createQuestion(false), false),
+    new Question(createQuestion(true), true),
+    new Question(createQuestion(false), false),
+    new Question(createQuestion(true), true)
   ]);
 
   String questionText;

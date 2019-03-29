@@ -7,6 +7,7 @@ Rakendus on kirjutatud Dart keeles
 Projekt oli tehtud YouTube video abil. Juhend seletab põhjalikult Dart keelt - layoutide kokkupanek, navigatsioon, animatsioon, lihtsamad konstruktorid ning widget'ite kasutamine ja loomine.
 
 ### Originaal ja enda poolt lisatud muudatused
+Originaal juhendis on esitatud kolm kindlat küsimust ning igal küsimusel on vastuseks true või false. Enda poolt muutsin küsimused - kasutaja poolt küsitakse 5 matemaatika küsimust (viis korrutus tehet) ning kasutaja peab valima, kas pakutud vastus on õige või väär (true või false).
 
 ### Screenshots:
 
